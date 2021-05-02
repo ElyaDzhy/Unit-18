@@ -7,7 +7,57 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Work with forms - second part</title>
   </head>
-  <body></body>
+  <body>
+    <form action="" method="get" autocomplete="off">
+      <input type="text" list="dataList" required />
+      <datalist id="dataList">
+        <option value="A-1">A-1</option>
+        <option value="B-1">B-1</option>
+        <option value="C-1">C-1</option>
+        <option value="A-2">A-2</option>
+        <option value="B-2">B-2</option>
+        <option value="C-2">C-2</option>
+        <option value="A-3">A-3</option>
+        <option value="B-3">B-3</option>
+        <option value="C-3">C-3</option>
+      </datalist>
+
+      <label for="userCity">Choose your city</label>
+      <select lang="ru" name="city" id="userCity" required>
+        <!-- multiple allows to choose several items -->
+        <!-- size="n" number of rows -->
+        <!-- внутри select возможны только option и optgroup -->
+
+        <optgroup label="Slavs">
+          <option value="" disabled selected>-</option>
+          <option value="Kiev" label="">Киев</option>
+          <option value="Moscow" label="">Москва</option>
+          <option value="Minsk" label="">Минск</option>
+          <option value="Warsaw" label="">Варшава</option>
+        </optgroup>
+        <optgroup label="Europe">
+          <option value="1">Lorem.</option>
+          <option value="2">Fugit!</option>
+          <option value="3">Minus!</option>
+          <option value="4">Ab.</option>
+          <option value="5">Quae.</option>
+        </optgroup>
+        <optgroup label="Asia">
+          <option value="1">Lorem.</option>
+          <option value="2">Fugit!</option>
+          <option value="3">Minus!</option>
+          <option value="4">Ab.</option>
+          <option value="5">Quae.</option>
+        </optgroup>
+      </select>
+      <!-- selected - defoult selested 
+        disabled - 
+        атрибут label="" переопределяет текст-->
+      <!--когда пользователь выберет эту единцу, значение будет взято из атрибута value-->
+      <button type="submit">Sign up</button>
+    </form>
+  </body>
 </html>
