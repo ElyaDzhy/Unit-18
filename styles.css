@@ -35,7 +35,7 @@ form::before {
 }
 
 form::after {
-  bottom: -10px;
+  bottom: -30px;
 
   left: 0;
 }
@@ -144,7 +144,7 @@ button {
   position: absolute;
   left: 40%;
   display: block;
-  margin-top: 10px;
+  margin: 10px;
   padding: 10px 20px;
 
   background-color: lightcoral;
@@ -160,16 +160,22 @@ button:hover {
 }
 
 input {
-  position: absolute;
-  left: 8vw;
-  top: 0;
-  display: block;
   margin: 10px 0;
-  width: 200px;
 
   border: none;
-  background-color: rgba(165, 42, 42, 0.726);
+  background-color: rgba(170, 59, 59, 0.726);
   color: inherit;
   font-family: inherit;
   font-size: inherit;
+}
+
+textarea {
+  margin: 10px 0;
+
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  text-overflow: ellipsis;
+  border: 1 px solid brown;
 }
