@@ -89,5 +89,15 @@
 
       <button type="submit">Sign up</button>
     </form>
+
+    <!-- output example -->
+    <form
+      id="formOut"
+      oninput="result.value=parseInt(a.value)+parseInt(b.value)"
+    >
+      <input type="range" id="b" name="b" value="50" /> +
+      <input type="number" id="a" name="a" value="10" /> =
+      <output name="result" for="a b">60</output>
+    </form>
   </body>
 </html>
