@@ -1,0 +1,25 @@
+/* псевдоклассы форм */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(63, 53, 53);
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  padding-top: 20vh;
+}
+
+input {
+  padding: 10px 20px;
+}
+
+input:focus {
+  outline: none;
+}
