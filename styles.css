@@ -179,3 +179,22 @@ textarea {
   text-overflow: ellipsis;
   border: 1 px solid brown;
 }
+
+/* copypast */
+
+progress[value] {
+  width: 100%;
+  height: 5px;
+
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(
+    50deg,
+    rgb(226, 128, 17),
+    rgb(138, 18, 18)
+  );
+}
