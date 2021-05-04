@@ -7,7 +7,7 @@
 
 body {
   font-family: sans-serif;
-  background-color: rgb(63, 53, 53);
+  background-color: rgb(230, 181, 148);
   display: flex;
   justify-content: center;
 }
@@ -18,8 +18,47 @@ form {
 
 input {
   padding: 10px 20px;
+  border-radius: 3px;
+  border: none;
 }
 
 input:focus {
   outline: none;
+  background-color: whitesmoke;
+  border: none;
+}
+
+input::placeholder {
+  /* to show that is possible to change plaseholder styles */
+}
+
+input:focus:valid {
+  border-bottom: 1px solid green;
+}
+
+input:focus:invalid {
+  border-bottom: 1px solid red;
+}
+
+input[type="number"]:out-of-range {
+  background-color: indianred;
+}
+
+input[type="number"]:in-range {
+  background-color: lightblue;
+}
+
+input.exmpl:required {
+  background-color: red;
+}
+
+input.exmpl:optional {
+  background-color: seagreen;
+}
+
+/* pseudo-class checked for radio and checkbox types */
+
+input:checked {
+  outline: 1px solid rgb(196, 49, 49);
+  outline-offset: 10px;
 }

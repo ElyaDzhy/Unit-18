@@ -17,14 +17,35 @@
         name="login"
         placeholder="enter login"
         required
+        pattern="^\w{4,16}$"
       />
       <br /><br />
+      <!-- attribute enabled and disabled -->
       <input
         type="password"
         name="userPass"
         placeholder="enter password"
         required
+        pattern="(?=.*[A-Z])(?=.*\d)^\w{8,30}$"
       />
+      <br /><br />
+      <!-- example  required/optional -->
+      <input class="exmpl" type="text" required />
+      <br /><br />
+      <input class="exmpl" type="text" />
+      <br /><br />
+      <!-- pseud-classes in-range and out-of-range for :  -->
+      <!-- <input type="range" /> -->
+      <input type="number" min="0" max="10" value="20" />
+      <br /><br />
+      <input type="number" min="0" max="10" value="7" />
+      <br /><br />
+      <!-- example :checked -->
+      <label for="id"> Lorem ipsum dolor sit. </label>
+      <input id="id" type="checkbox" />
+      <br />
+      <label for="id2">Lorem, ipsum dolor.</label>
+      <input id="id2" type="radio" />
       <br /><br /><br />
       <button type="submit">Login</button>
     </form>
