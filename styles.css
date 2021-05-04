@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  /* var */
+
+  --primary-dark: rgb(27, 99, 95);
+  --primary-light: wheat;
+
+  --secondary-light: rgb(211, 166, 106);
+  --second-var-of-scndr: rgb(189, 147, 92);
+
+  --hover: rgb(182, 138, 81);
+  --hover-border: rgb(161, 121, 68);
+}
+
+#pageHeader {
+  padding: 30px;
+  background-color: var(--primary-light);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+#pageFooter {
+  margin-top: auto;
+  height: 200px;
+  background-color: var(--primary-dark);
+}
+
+#pageNav {
+  /* padding: 30px; */
+  /* visibility: hidden; */
+  height: 100vh;
+  max-width: 100vw;
+  width: 300px;
+  overflow-y: scroll;
+
+  position: fixed;
+  /* left: 0; */
+  top: 0;
+  left: -300px;
+  z-index: 100;
+  text-align: left;
+  background-color: var(--secondary-light);
+
+  transition-duration: 0.4s;
+  transition-timing-function: linear;
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+  /* or can write : display:none; */
+}
+
+#menuIcon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+#closeIcon {
+  position: absolute;
+  right: 2px;
+  z-index: 9000;
+}
+
+#menuIcon:hover,
+#closeIcon:hover {
+  cursor: pointer;
+}
+
+#checkboxMenu:checked + #pageNav {
+  left: 0px;
+}
+
+#checkboxNav:checked > #pageNav {
+  left: -300px;
+}
+
+nav > header {
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  color: white;
+  text-align: inherit;
+
+  background-color: var(--primary-dark);
+
+  z-index: 0;
+}
+h1 {
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding-top: 10px;
+  padding-left: 5px;
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 2px;
+  font-family: inherit;
+  background-color: var(--second-var-of-scndr);
+  border: 1px solid var(--second-var-of-scndr);
+}
+
+li + li {
+  margin-top: 5px;
+}
+
+li:hover {
+  background-color: var(--hover);
+  border: 1px solid var(--hover-border);
+}
+
+#pageNav::-webkit-scrollbar {
+  background-color: var(--primary-light);
+  border: 1px solid var(--hover-border);
+}
+
+#pageNav::-webkit-scrollbar-button {
+  background-color: var(--hover-border);
+}
+#pageNav::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-light);
+  border: 1px solid var(--hover-border);
+}

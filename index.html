@@ -7,7 +7,56 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Work with forms - second part</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>CSS navigation menu</title>
   </head>
-  <body></body>
+  <body>
+    <!-- pseudo-model of page -->
+    <header id="pageHeader">
+      Header
+      <label for="checkboxMenu">
+        <img
+          id="menuIcon"
+          src="./../images/menu.png"
+          alt="menu icon"
+        />
+      </label>
+    </header>
+
+    <input id="checkboxMenu" type="checkbox" />
+
+    <nav id="pageNav">
+      <label for="checkboxMenu">
+        <img
+          id="closeIcon"
+          src="./../images/close.png"
+          alt="close-menu icon"
+      /></label>
+      <header>
+        <h1>Lorem ipsum.</h1>
+      </header>
+      <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Repellat, veritatis dolore.</li>
+        <li>Quas, at modi!</li>
+        <li>Suscipit, sequi enim.</li>
+        <li>Officiis, repudiandae ullam!</li>
+        <li>Repellat, veritatis dolore.</li>
+        <li>Quas, at modi!</li>
+        <li>Suscipit, sequi enim.</li>
+        <li>Officiis, repudiandae ullam!</li>
+        <li>Suscipit, sequi enim.</li>
+        <li>Officiis, repudiandae ullam!</li>
+        <li>Repellat, veritatis dolore.</li>
+        <li>Quas, at modi!</li>
+        <li>Suscipit, sequi enim.</li>
+        <li>Officiis, repudiandae ullam!</li>
+        <li>Quas, at modi!</li>
+        <li>Suscipit, sequi enim.</li>
+        <li>Officiis, repudiandae ullam!</li>
+      </ul>
+    </nav>
+    <input type="checkbox" id="checkboxNav" />
+    <footer id="pageFooter"></footer>
+  </body>
 </html>
